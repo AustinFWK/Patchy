@@ -6,7 +6,7 @@ interface InstructionStepsProps {
 }
 
 export function InstructionSteps({ instruction }: InstructionStepsProps) {
-  const { step, title, description, image, reverse } = instruction;
+  const { step, title, description, reverse } = instruction;
   return (
     <div
       className={`grid gap-12 items-center md:grid-cols-2 ${
@@ -38,15 +38,6 @@ export function InstructionSteps({ instruction }: InstructionStepsProps) {
           <span className="text-[11px] text-white/40 font-medium mx-auto">
             Valorant Patch Bot
           </span>
-        </div>
-
-        {/* Screenshot */}
-        <div className="aspect-video bg-[#313338]">
-          <img
-            src={image}
-            alt={title}
-            className="w-full h-full object-cover object-top"
-          />
         </div>
       </div>
     </div>
