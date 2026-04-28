@@ -2,7 +2,6 @@ export type Instruction = {
   step: string;
   title: string;
   description: string;
-  reverse?: boolean;
 };
 
 export const instructions: Instruction[] = [
@@ -15,7 +14,6 @@ export const instructions: Instruction[] = [
     step: "2",
     title: "Choose a channel",
     description: "Select which channel you would like patch notes posted in.",
-    reverse: true,
   },
   {
     step: "3",

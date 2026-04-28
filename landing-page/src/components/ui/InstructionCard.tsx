@@ -6,11 +6,10 @@ interface InstructionStepsProps {
 }
 
 export function InstructionSteps({ instruction }: InstructionStepsProps) {
-  const { step, title, description, reverse } = instruction;
+  const { step, title, description } = instruction;
   return (
     <div
-      className={`grid gap-12 items-center md:grid-cols-2 ${
-        reverse ? "md:[&>*:first-child]:order-2" : ""
+      className={`grid gap-12 items-center md:grid-cols-2 
       }`}
     >
       <Card className="border-muted">
