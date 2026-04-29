@@ -14,7 +14,7 @@ export const instructions: Instruction[] = [
     step: "2",
     title: "Choose a channel",
     description:
-      "Run /setup and pick the channel where patch notes should be posted. Takes less than 30 seconds.",
+      'Type "!setchannel valorant" in any channel to set it as the destination for patch notes.',
   },
   {
     step: "3",
