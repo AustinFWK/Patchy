@@ -9,7 +9,7 @@ export function FeatureCard({ feature }: FeatureCardProps) {
 
   if (tier === "hero") {
     return (
-      <div className="h-full flex flex-col gap-4 rounded-xl p-6 bg-brand-accent/[0.06] border border-brand-accent/20">
+      <div className="h-full flex flex-col gap-4 rounded-xl p-6 bg-brand-accent/[0.12] dark:bg-brand-accent/[0.06] border border-brand-accent/30 dark:border-brand-accent/20">
         <div>
           <span className="inline-block text-[10px] font-bold tracking-widest uppercase bg-brand-accent/10 text-brand-accent border border-brand-accent/25 rounded px-2 py-0.5 mb-4">
             Core Feature
@@ -28,7 +28,7 @@ export function FeatureCard({ feature }: FeatureCardProps) {
 
   if (tier === "mid") {
     return (
-      <div className="h-full rounded-xl p-5 bg-brand-accent/[0.03] border border-brand-accent/[0.13] flex flex-col gap-2 justify-center">
+      <div className="h-full rounded-xl p-5 bg-brand-accent/[0.08] dark:bg-brand-accent/[0.03] border border-brand-accent/[0.22] dark:border-brand-accent/[0.13] flex flex-col gap-2 justify-center">
         <div className="text-xl text-brand-accent/80">
           <IconComponent />
         </div>
