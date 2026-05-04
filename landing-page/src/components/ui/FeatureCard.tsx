@@ -4,41 +4,6 @@ interface FeatureCardProps {
   feature: Feature;
 }
 
-function DiscordPreview() {
-  return (
-    <div className="mt-auto rounded-lg bg-[#313338] p-3 flex gap-2.5">
-      <div className="w-8 h-8 rounded-full bg-brand-accent flex-shrink-0 flex items-center justify-center text-xs font-black text-black">
-        V
-      </div>
-      <div className="min-w-0">
-        <div className="flex items-center gap-1.5 mb-1">
-          <span className="text-[11px] font-bold text-white">
-            Valorant News
-          </span>
-          <span className="text-[8px] font-bold bg-[#5865f2] text-white rounded px-1 py-px">
-            APP
-          </span>
-        </div>
-        <div className="text-[10px] text-[#b5bac1] leading-relaxed">
-          <div>Patch 12.03 — TL:DR</div>
-          <div>• Skirmish arrives as a 2v2 mode</div>
-          <div>• Pick'Ems ready for Masters Santiago</div>
-          <div className="font-bold text-white mt-1 mb-0.5">AGENT UPDATES</div>
-          <div className="font-bold">Gekko</div>
-          <div className="pl-3">• Reclaim timer increased 15s → 20s</div>
-          <div className="pl-3">• Mosh Pit is now reclaimable</div>
-          <div className="mt-1 border-l-2 border-brand-accent/40 pl-2 bg-[#2b2d31] rounded-r text-[9px] text-[#888]">
-            <div className="font-semibold text-[#ccc] text-[10px]">
-              VALORANT Patch Notes 12.03
-            </div>
-            <div>Modes updates, Gekko changes, and more.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export function FeatureCard({ feature }: FeatureCardProps) {
   const { title, description, icon: IconComponent, tier } = feature;
 
@@ -57,7 +22,6 @@ export function FeatureCard({ feature }: FeatureCardProps) {
             {description}
           </p>
         </div>
-        <DiscordPreview />
       </div>
     );
   }
