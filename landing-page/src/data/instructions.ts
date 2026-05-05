@@ -2,7 +2,7 @@ export type Instruction = {
   step: string;
   title: string;
   description: string;
-  command?: string;
+  command?: string[];
 };
 
 export const instructions: Instruction[] = [
@@ -14,9 +14,9 @@ export const instructions: Instruction[] = [
   {
     step: "2",
     title: "Choose a channel",
-    description:
-      "Type {command} in any channel to set it as the destination for patch notes.",
-    command: "!setchannel",
+    description: `Type {command[0]} in any channel to set it as the destination for patch notes.
+      Type {command[1]} to stop patchnotes from being sent to that channel.`,
+    command: ["!setchannel", "!clearchannel"],
   },
   {
     step: "3",
