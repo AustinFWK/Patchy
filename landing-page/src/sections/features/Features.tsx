@@ -1,4 +1,4 @@
-import { FeatureCard } from "@/components/ui/FeatureCard";
+import { FeatureCard } from "@/components/FeatureCard";
 import { features } from "@/data/features";
 
 export default function Features() {
