@@ -16,7 +16,7 @@ export const instructions: Instruction[] = [
     title: "Choose a channel",
     description: `Type {command[0]} in any channel to set it as the destination for patch notes.
       Type {command[1]} to stop patchnotes from being sent to that channel.`,
-    command: ["!setchannel", "!clearchannel"],
+    command: ["!setchannel valorant", "!clearchannel valorant"],
   },
   {
     step: "3",

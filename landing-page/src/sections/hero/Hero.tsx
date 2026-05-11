@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="container grid md:grid-cols-2 gap-12 items-center">
         {/* Left: text + CTA */}
         <div>
-          <h1>Never miss a Valorant Patch again!</h1>
+          <h1>Never miss a Valorant Patch again with Patchy!</h1>
           <p className="text-lg text-muted-foreground mt-4 mb-4 max-w-[55ch]">
             Get instant, clean, easy-to-read patch notes delivered straight to
             your Discord server.
@@ -33,7 +33,7 @@ export default function Hero() {
               <span className="w-2.5 h-2.5 rounded-full bg-white/20" />
             </div>
             <span className="text-[11px] text-white/40 font-medium mx-auto">
-              Valorant Patch Bot
+              Patchy
             </span>
           </div>
           <div className="relative bg-[#313338]">
