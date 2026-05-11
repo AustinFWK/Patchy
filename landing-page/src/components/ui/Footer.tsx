@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="py-6 flex flex-col items-center justify-center gap-2">
       <span className="text-sm font-semibold text-muted-foreground">
-        Valorant Patch Bot {new Date().getFullYear()}
+        © Patchy {new Date().getFullYear()}
       </span>
 
       <a
