@@ -9,8 +9,8 @@ export default function Hero() {
         <div>
           <h1>Never miss a Valorant Patch again with Patchy!</h1>
           <p className="text-lg text-muted-foreground mt-4 mb-4 max-w-[55ch]">
-            Get instant, clean, easy-to-read patch notes delivered straight to
-            your Discord server.
+            This Discord Bot gives you instant, clean, easy-to-read patch notes
+            delivered straight to your Discord server.
           </p>
           <a
             href="https://discord.com/oauth2/authorize?client_id=1204815740918693898"
