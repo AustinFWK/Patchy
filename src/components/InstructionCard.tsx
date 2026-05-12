@@ -1,4 +1,4 @@
-import { Card, CardContent } from "./card";
+import { Card, CardContent } from "./ui/card";
 import { type Instruction } from "@/data/instructions";
 
 function renderWithCommands(description: string, commands: string[]) {
@@ -9,7 +9,9 @@ function renderWithCommands(description: string, commands: string[]) {
 
   while ((match = regex.exec(description)) !== null) {
     const cmdIndex = parseInt(match[1], 10);
-    parts.push(<span key={lastIndex}>{description.slice(lastIndex, match.index)}</span>);
+    parts.push(
+      <span key={lastIndex}>{description.slice(lastIndex, match.index)}</span>,
+    );
     parts.push(
       <code
         key={match.index}
@@ -41,13 +43,17 @@ export function InstructionSteps({ instruction }: InstructionStepsProps) {
           <h3>{title}</h3>
 
           <div className="text-muted-foreground text-sm leading-relaxed space-y-2">
-            {command
-              ? description
-                  .split("\n")
-                  .map((line) => line.trim())
-                  .filter(Boolean)
-                  .map((line, i) => <p key={i}>{renderWithCommands(line, command)}</p>)
-              : <p>{description}</p>}
+            {command ? (
+              description
+                .split("\n")
+                .map((line) => line.trim())
+                .filter(Boolean)
+                .map((line, i) => (
+                  <p key={i}>{renderWithCommands(line, command)}</p>
+                ))
+            ) : (
+              <p>{description}</p>
+            )}
           </div>
         </CardContent>
       </Card>
