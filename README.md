@@ -19,7 +19,7 @@ npm install
 
 * Website: austinfwk.dev
 * Github: [@AustinFWK](https://github.com/AustinFWK)
-* LinkedIn: [@Austin Winger-Kailer](https://linkedin.com/in/Austin Winger-Kailer)
+* LinkedIn: [@Austin Winger-Kailer]([https://linkedin.com/in/Austin Winger-Kailer](https://www.linkedin.com/in/austin-winger-kailer/))
 
 ## Show your support
 
