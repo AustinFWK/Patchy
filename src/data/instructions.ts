@@ -9,7 +9,7 @@ export const instructions: Instruction[] = [
   {
     step: "1",
     title: "Invite the bot",
-    description: "Add the bot to your discord server with a few clicks.",
+    description: "Add the bot to your Discord server with a few clicks.",
   },
   {
     step: "2",
