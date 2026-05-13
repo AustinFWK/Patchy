@@ -1,7 +1,5 @@
 import type { SvgIconComponent } from "@mui/icons-material";
-import SettingsIcon from "@mui/icons-material/Settings";
 import PsychologyIcon from "@mui/icons-material/Psychology";
-import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
 import CleaningServicesIcon from "@mui/icons-material/CleaningServices";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 
