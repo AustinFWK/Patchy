@@ -4,10 +4,12 @@ import Features from "./sections/features/Features";
 import CallToAction from "./sections/cta/CallToAction";
 import { ThemeProvider } from "./components/ThemeProvider";
 import Footer from "./components/Footer";
+import Statistics from "./components/Statistics";
 
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <Statistics />
       <Hero />
       <Features />
       <Instructions />
