@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 
 export default function Statistics() {
-  const [stats, setStats] = useState<{ servers: number; users: number } | null>(
-    null,
-  );
+  const [stats, setStats] = useState<{
+    servers: number;
+    members: number;
+  } | null>(null);
 
   useEffect(() => {
     async function fetchStats() {
@@ -25,7 +26,7 @@ export default function Statistics() {
       <span className="text-muted-foreground/40">·</span>
       <span>
         <strong className="text-foreground font-semibold">
-          {stats ? stats.users : "..."}
+          {stats ? stats.members : "..."}
         </strong>{" "}
         users
       </span>
