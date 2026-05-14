@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import { useEffect, useState } from "react";
 
 export default function Statistics() {
@@ -16,20 +17,28 @@ export default function Statistics() {
   }, []);
 
   return (
-    <div className="flex items-center gap-2 text-sm text-muted-foreground mb-8">
-      <span>
-        <strong className="text-foreground font-semibold">
-          {stats ? stats.servers : "..."}
-        </strong>{" "}
-        servers
-      </span>
-      <span className="text-muted-foreground/40">·</span>
-      <span>
-        <strong className="text-foreground font-semibold">
-          {stats ? stats.members : "..."}
-        </strong>{" "}
-        users
-      </span>
+    <div className="flex flex-col gap-3 mb-6">
+      <h3>PROUDLY SERVING</h3>
+      <div className="flex items-center gap-2">
+        <Badge
+          variant="outline"
+          className="text-lg px-3 py-1 border-brand-accent/40 text-brand-accent bg-brand-accent/10 px-4 py-3"
+        >
+          <span className="font-semibold">
+            {stats ? stats.servers.toLocaleString() : "..."}
+          </span>{" "}
+          servers
+        </Badge>
+        <Badge
+          variant="outline"
+          className="text-lg px-3 py-1 border-brand-accent/40 text-brand-accent bg-brand-accent/10 px-4 py-3"
+        >
+          <span className="font-semibold">
+            {stats ? stats.members.toLocaleString() : "..."}
+          </span>{" "}
+          members
+        </Badge>
+      </div>
     </div>
   );
 }
